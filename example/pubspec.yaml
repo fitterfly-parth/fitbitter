@@ -1,0 +1,39 @@
+name: fitbitter_example
+description: A simple app that demonstrates the use of fitbitter.
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.1 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ------- FITBITTER 
+  fitbitter:
+    path: ../
+  # --------------------
+    
+  # ----- SHAREDPREFERENCES
+  #shared_preferences: ^2.0.5
+  # -----
+
+  # ----- PROVIDER
+  provider: ^5.0.0
+  # -----
+
+  flutter_lints: ^2.0.0
+
+  cupertino_icons: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# The following section is specific to Flutter.
+flutter:
+  uses-material-design: true
+
