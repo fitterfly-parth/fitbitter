@@ -102,4 +102,5 @@ class FitbitSleepDataManager extends FitbitDataManager {
     } // for nRecords
     return sleepDataPoints;
   } // _extractFitbitSleepData
+
 } // FitbitSleepDataManager

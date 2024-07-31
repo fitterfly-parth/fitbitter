@@ -1,6 +1,6 @@
 name: fitbitter
 description: A Flutter package to make your life easier when dealing with Fitbit APIs.
-version: 2.0.4
+version: 2.0.5
 homepage: https://github.com/gcappon/fitbitter
 
 environment:
@@ -12,9 +12,9 @@ dependencies:
     sdk: flutter
 
   flutter_web_auth: ^0.5.0 #used to implement oauth 2.0
-  dio: ^5.4.0 #better web browser
+  dio: ^5.3.2 #better web browser
   logger: ^2.0.2+1
-  intl: ^0.19.0
+  intl: ^0.18.0
 
 dev_dependencies:
   flutter_test:

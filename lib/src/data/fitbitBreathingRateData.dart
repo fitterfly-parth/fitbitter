@@ -47,4 +47,5 @@ class FitbitBreathingRateData implements FitbitData {
           ..write(')'))
         .toString();
   } // toString
+
 } // FitbitSpO2Data

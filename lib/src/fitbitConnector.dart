@@ -148,10 +148,7 @@ class FitbitConnector {
       {required String clientID,
       required String clientSecret,
       required String redirectUri,
-      required String callbackUrlScheme,
-      List<FitbitAuthScope> scopeList = const [FitbitAuthScope.ACTIVITY, FitbitAuthScope.CARDIO_FITNESS, FitbitAuthScope.HEART_RATE, FitbitAuthScope.LOCATION, FitbitAuthScope.NUTRITION, FitbitAuthScope.OXYGEN_SATURATION, FitbitAuthScope.PROFILE, FitbitAuthScope.RESPIRATORY_RATE, FitbitAuthScope.SETTINGS, FitbitAuthScope.SLEEP, FitbitAuthScope.SOCIAL, FitbitAuthScope.TEMPERATURE],
-      int expiresIn = 28800  
-        }) async {
+      required String callbackUrlScheme}) async {
     // Instantiate Dio and its Response
     Dio dio = Dio();
     Response response;
@@ -160,7 +157,7 @@ class FitbitConnector {
 
     // Generate the fitbit url
     final fitbitAuthorizeFormUrl = FitbitAuthAPIURL.authorizeForm(
-        redirectUri: redirectUri, clientID: clientID, scopeList: scopeList, expiresIn: expiresIn);
+        redirectUri: redirectUri, clientID: clientID);
 
     // Perform authentication
     try {
@@ -246,4 +243,5 @@ class FitbitConnector {
       print(e);
     } // catch
   } // unauthorize
+
 } // FitbitConnector

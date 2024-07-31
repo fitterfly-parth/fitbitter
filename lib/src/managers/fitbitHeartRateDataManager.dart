@@ -68,4 +68,5 @@ class FitbitHeartDataManager extends FitbitDataManager {
     } // for entry
     return heartDataPoints;
   } // _extractFitbitHeartData
+
 } // FitbitHeartDataManager

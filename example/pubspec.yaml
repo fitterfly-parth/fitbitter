@@ -6,7 +6,7 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.18.0 <4.0.0'
+  sdk: ">=2.17.1 <3.0.0"
 
 dependencies:
   flutter:
@@ -16,12 +16,16 @@ dependencies:
   fitbitter:
     path: ../
   # --------------------
-
-  # ----- PROVIDER
-  provider: ^6.1.1
+    
+  # ----- SHAREDPREFERENCES
+  #shared_preferences: ^2.0.5
   # -----
 
-  flutter_lints: ^3.0.1
+  # ----- PROVIDER
+  provider: ^5.0.0
+  # -----
+
+  flutter_lints: ^2.0.0
 
   cupertino_icons: ^1.0.0
 

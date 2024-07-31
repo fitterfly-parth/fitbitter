@@ -28,7 +28,8 @@ class FitbitActivityTimeseriesData implements FitbitData {
       {required Map<String, dynamic> json}) {
     return FitbitActivityTimeseriesData(
       userID: json['userID'],
-      dateOfMonitoring: DateTime.parse(json['dateOfMonitoring']),
+      dateOfMonitoring:
+          DateTime.parse(json['dateOfMonitoring']),
       type: json['type'],
       value: json['value'],
     );
@@ -54,4 +55,5 @@ class FitbitActivityTimeseriesData implements FitbitData {
           ..write(')'))
         .toString();
   } // toString
+
 } // FitbitActivityTimeseriesData

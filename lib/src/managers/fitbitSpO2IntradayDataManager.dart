@@ -57,4 +57,5 @@ class FitbitSpO2IntradayDataManager extends FitbitDataManager {
     }
     return spO2IntradayDataPoints;
   } // _extractFitbitSpO2IntradayData
+
 } // FitbitSpO2IntradayDataManager

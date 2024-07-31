@@ -23,4 +23,5 @@ class FitbitAccountAPIURL extends FitbitAPIURL {
   static String _getBaseURL() {
     return 'https://api.fitbit.com/1/user';
   } // _getBaseURL
+
 } // FitbitAccountAPIURL

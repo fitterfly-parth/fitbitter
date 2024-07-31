@@ -24,4 +24,5 @@ class FitbitDeviceAPIURL extends FitbitAPIURL {
   static String _getBaseURL(String? userID) {
     return 'https://api.fitbit.com/1/user/$userID/devices';
   } // _getBaseURL
+
 } // FitbitDeviceAPIURL

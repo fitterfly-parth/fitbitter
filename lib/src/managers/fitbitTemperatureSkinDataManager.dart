@@ -52,4 +52,5 @@ class FitbitTemperatureSkinDataManager extends FitbitDataManager {
 
     return tempSkinDataPoints;
   } // _extractFitbitTemperatureSkinData
+
 } // FitbitTemperatureSkinDataManager

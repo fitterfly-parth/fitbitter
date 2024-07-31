@@ -65,4 +65,5 @@ class FitbitSpO2DataManager extends FitbitDataManager {
     }
     return spO2DataPoints;
   } // _extractFitbitSpO2Data
+
 } // FitbitSpO2DataManager

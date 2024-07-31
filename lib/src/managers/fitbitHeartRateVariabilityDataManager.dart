@@ -52,4 +52,5 @@ class FitbitHeartRateVariabilityDataManager extends FitbitDataManager {
 
     return hrvDataPoints;
   } // _extractFitbitHeartRateVariabilityData
+
 } // FitbitHeartRateVariabilityDataManager

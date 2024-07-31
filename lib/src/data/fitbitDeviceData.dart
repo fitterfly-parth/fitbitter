@@ -67,4 +67,5 @@ class FitbitDeviceData implements FitbitData {
       'type': type,
     };
   } // toJson
+
 } // FitbitDeviceData
