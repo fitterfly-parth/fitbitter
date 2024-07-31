@@ -39,11 +39,10 @@ class FitbitActivityDataManager extends FitbitDataManager {
     List<FitbitActivityData> activityDatapoints =
         List<FitbitActivityData>.empty(growable: true);
     for (var record = 0; record < data.length; record++) {
-      print("Data---> ${data[record]}");
       activityDatapoints.add(FitbitActivityData(
           userID: userID,
           activityId: data[record]['activityTypeId'].toString(),
-          activityParentId: data[record]['activityParentId'].toString(),
+          activityParentId: "",
           calories: data[record]['calories'].toDouble(),
           description: data[record]['description'],
           distance: data[record]['distance'] == null
