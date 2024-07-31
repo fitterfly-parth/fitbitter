@@ -25,6 +25,15 @@ class FitbitActivityAPIURL extends FitbitAPIURL {
     );
   } // FitbitActivityAPIURL.day
 
+  factory FitbitActivityAPIURL.range(
+      {required FitbitCredentials fitbitCredentials, required DateTime afterDate}) {
+    String dateStr = Formats.onlyDayDateFormatTicks.format(afterDate);
+    return FitbitActivityAPIURL(
+      url: '${_getBaseURL(fitbitCredentials.userID)}/list.json?afterDate=$dateStr&sort=asc&offset=0&limit=100',
+      fitbitCredentials: fitbitCredentials,
+    );
+  }
+
   static String _getBaseURL(String? userID) {
     return 'https://api.fitbit.com/1/user/$userID/activities';
   } // _getBaseURL
