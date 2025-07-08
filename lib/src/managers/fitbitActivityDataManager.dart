@@ -38,12 +38,11 @@ class FitbitActivityDataManager extends FitbitDataManager {
     final data = response['activities'];
     List<FitbitActivityData> activityDatapoints =
         List<FitbitActivityData>.empty(growable: true);
-
     for (var record = 0; record < data.length; record++) {
       activityDatapoints.add(FitbitActivityData(
           userID: userID,
-          activityId: data[record]['activityId'].toString(),
-          activityParentId: data[record]['activityParentId'].toString(),
+          activityId: data[record]['activityTypeId'].toString(),
+          activityParentId: "",
           calories: data[record]['calories'].toDouble(),
           description: data[record]['description'],
           distance: data[record]['distance'] == null
@@ -52,10 +51,9 @@ class FitbitActivityDataManager extends FitbitDataManager {
           duration: data[record]['duration'].toDouble(),
           isFavorite: data[record]['isFavorite'],
           logId: data[record]['logId'].toString(),
-          name: data[record]['name'],
-          startTime: DateTime.parse(
-              data[record]["startDate"] + " " + data[record]["startTime"]),
-          dateOfMonitoring: DateTime.parse(data[record]["startDate"])));
+          name: data[record]['activityName'],
+          startTime: DateTime.parse(data[record]["startTime"]),
+          dateOfMonitoring: DateTime.parse(data[record]["startTime"])));
     } // for entry
     return activityDatapoints;
   } // _extractFitbitActivityData
